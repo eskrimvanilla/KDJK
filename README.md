@@ -27,7 +27,7 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     $ sudo apt  install docker-compose
     ```
     
-2. Instalasi Actual atau pemasangan. Terdapat dua cara untuk melakukan instalasi, dapat menggunakan clone repository atau docker image
+2. Instalasi Actual. Terdapat dua cara untuk melakukan instalasi, yaitu menggunakan clone repository atau docker image
    
     Clone repository :
     ```
