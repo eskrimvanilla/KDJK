@@ -28,18 +28,18 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     ```
     
 2. Instalasi Actual atau pemasangan. Terdapat dua cara untuk melakukan instalasi, dapat menggunakan clone repository atau docker image
-
-Clone repository :
+   
+    Clone repository :
     ```
     $ git clone https://github.com/actualbudget/actual-server.git\
     ```
     
-Pull dari docker image:
+    Pull dari docker image:
     ```
     $ docker pull actualbudget/actual-server
     ```
 
-3. Jalankan command berikut untuk terhubung ke GCP:
+4. Jalankan command berikut untuk terhubung ke GCP:
     ```
     $ gcloud auth login
     ```
