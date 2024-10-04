@@ -8,9 +8,45 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
 
 ## Instalasi
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
-- Langkah instalasi dalam CLI.
+#### Kebutuhan Sistem :
+- Linux CLI
+- Php 5.3+
+- Node.js v18 atau versi yang lebih tinggi
+- Web server (GCP)
+- Docker dan Docker compose
 
+#### Proses Instalasi :
+1. Pastikan sudah memiliki docker dan docker compose dengan menjalankan code berikut. 
+    ```
+    $ docker -v
+    $ docker-compose -v
+    ```
+Jika docker belum terinstal, jalankan kode berikut.
+    ```
+    $ sudo snap install docker  
+    $ sudo apt  install docker-compose
+    ```
+    
+2. Instalasi Actual atau pemasangan. Terdapat dua cara untuk melakukan instalasi, dapat menggunakan clone repository atau docker image
+
+Clone repository :
+    ```
+    $ git clone https://github.com/actualbudget/actual-server.git\
+    ```
+Pull dari docker image:
+    ```
+    $ docker pull actualbudget/actual-server
+    ```
+
+3. Jalankan command berikut untuk terhubung ke GCP:
+    ```
+    $ gcloud auth login
+    ```
+
+Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, Anda bisa terhubung ke proyek Anda dengan menggunakan perintah berikut:
+    ```
+    $ gcloud init
+    ```
 
 ## Konfigurasi (opsional)
 
