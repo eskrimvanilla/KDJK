@@ -1,9 +1,9 @@
 # Aplikasi Web "ACTUAL"
 
 
-## Sekilas Tentang
+## Sekilas Tentang Actual
 
-Deskripsi singkat tentang aplikasi tsb.
+Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggaran zero-sum.
 
 
 ## Instalasi
