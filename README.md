@@ -21,7 +21,7 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     $ docker -v
     $ docker-compose -v
     ```
-Jika docker belum terinstal, jalankan kode berikut.
+    Jika docker belum terinstal, jalankan kode berikut.
     ```
     $ sudo snap install docker  
     $ sudo apt  install docker-compose
@@ -33,6 +33,7 @@ Clone repository :
     ```
     $ git clone https://github.com/actualbudget/actual-server.git\
     ```
+    
 Pull dari docker image:
     ```
     $ docker pull actualbudget/actual-server
@@ -42,8 +43,7 @@ Pull dari docker image:
     ```
     $ gcloud auth login
     ```
-
-Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, Anda bisa terhubung ke proyek Anda dengan menggunakan perintah berikut:
+    Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, Anda bisa terhubung ke proyek Anda dengan menggunakan perintah berikut:
     ```
     $ gcloud init
     ```
