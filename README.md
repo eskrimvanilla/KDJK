@@ -3,7 +3,7 @@
 
 ## Sekilas Tentang Actual
 
-Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggaran zero-sum.
+Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggaran zero-sum. Alat ini mendukung sinkronisasi lintas perangkat, aturan khusus, impor transaksi manual (dari berkas QIF, OFX, dan QFX), dan sinkronisasi otomatis opsional dengan banyak bank.
 
 
 ## Instalasi
