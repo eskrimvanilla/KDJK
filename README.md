@@ -63,18 +63,21 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
    
    ![image](https://github.com/user-attachments/assets/7472f350-5e86-409d-b6dd-6212e29a9efc)
    
-       Sebelum melakukan push ke Artifact Registry, pastikan untuk membuat **Service Account** dengan peran IAM (IAM roles) berikut:
-       - Artifact Registry Administrator
-       - Artifact Registry Create-on-Push Repository Administrator
-       - Storage Admin
-       ![image](https://github.com/user-attachments/assets/cc608fc7-6312-44f5-a8c2-cc7126d65785)
-       ![image](https://github.com/user-attachments/assets/a14bc9f0-4cf6-44d7-8fe5-becd16065791)
-       Langkah selanjutnya adalah mengekspor kredensial dengan cara berikut:
-        - Buka Service Accounts di menu IAM & Admin.
-        - Klik pada Service Account yang telah dibuat.
-        - Pada bagian Keys, klik Add Key, lalu pilih Create New Key.
-        - Pilih Key Type sebagai JSON dan simpan file yang diunduh untuk digunakan nanti.
-        ![image](https://github.com/user-attachments/assets/d8ddc6f6-2bf2-4fa7-a92c-e373e41ebd54)
+   Sebelum melakukan push ke Artifact Registry, pastikan untuk membuat **Service Account** dengan peran IAM (IAM roles) berikut:
+   - Artifact Registry Administrator
+   - Artifact Registry Create-on-Push Repository Administrator
+   - Storage Admin
+     ![image](https://github.com/user-attachments/assets/cc608fc7-6312-44f5-a8c2-cc7126d65785)
+     
+     ![image](https://github.com/user-attachments/assets/a14bc9f0-4cf6-44d7-8fe5-becd16065791)
+     
+   Langkah selanjutnya adalah mengekspor kredensial dengan cara berikut:
+   - Buka Service Accounts di menu IAM & Admin.
+   - Klik pada Service Account yang telah dibuat.
+   - Pada bagian Keys, klik Add Key, lalu pilih Create New Key.
+   - Pilih Key Type sebagai JSON dan simpan file yang diunduh untuk digunakan nanti.
+     
+     ![image](https://github.com/user-attachments/assets/d8ddc6f6-2bf2-4fa7-a92c-e373e41ebd54)
 7. 
 
 ## Konfigurasi (opsional)
