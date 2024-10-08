@@ -39,15 +39,38 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     $ docker pull actualbudget/actual-server
     ```
 
-4. Jalankan command berikut untuk terhubung ke GCP:
+4. Konfigurasi GCP :
+    Jalankan perintah berikut untuk login ke akun Google Cloud:
     ```
     $ gcloud auth login
     ```
-    Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, gunakan perintah berikut untuk terhubung ke proyek:
+    Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, inisialisasi konfigurasi dengan perintah berikut untuk terhubung ke proyek:
     ```
     $ gcloud init
     ```
-    ![image](https://github.com/user-attachments/assets/05d2af1e-0746-4aac-9ed8-ae2f976b9718)
+    Untuk langkah konfigurasi, pilih opsi sesuai dengan yang diinginkan.
+   - Pilih konfigurasi yang ada atau buat konfigurasi baru
+     Foto1
+   - Pilih akun Google yang akan digunakan dan pilih proyek dari daftar proyek yang tersedia
+     Foto2
+5. Setelah menghubungkan Linux CLI dengan GCP, langkah berikutnya adalah membuat repository baru untuk Artifact Registry di GCP.
+   Klik tombol + Create Repository yang terdapat di halaman Artifact Registry pada dashboard Google Cloud.
+   ![image](https://github.com/user-attachments/assets/f22e14e9-2f66-4e09-ba0f-25563ff16e57)
+   Buat nama repository sesuai keinginan. Pilih Docker sebagai format, atau gunakan format nama sebagai <NAME>.gcr.io agar format otomatis menjadi Docker. Pilih lokasi penyimpanan repository dengan opsi Region atau Multi-region untuk memastikan keamanan data dan meminimalkan risiko kehilangan data.
+   ![image](https://github.com/user-attachments/assets/7472f350-5e86-409d-b6dd-6212e29a9efc)
+   Sebelum melakukan push ke Artifact Registry, pastikan untuk membuat **Service Account** dengan peran IAM (IAM roles) berikut:
+   - Artifact Registry Administrator
+   - Artifact Registry Create-on-Push Repository Administrator
+   - Storage Admin
+   ![image](https://github.com/user-attachments/assets/cc608fc7-6312-44f5-a8c2-cc7126d65785)
+   ![image](https://github.com/user-attachments/assets/a14bc9f0-4cf6-44d7-8fe5-becd16065791)
+   Langkah selanjutnya adalah mengekspor kredensial dengan cara berikut:
+    - Buka Service Accounts di menu IAM & Admin.
+    - Klik pada Service Account yang telah dibuat.
+    - Pada bagian Keys, klik Add Key, lalu pilih Create New Key.
+    - Pilih Key Type sebagai JSON dan simpan file yang diunduh untuk digunakan nanti.
+    ![image](https://github.com/user-attachments/assets/d8ddc6f6-2bf2-4fa7-a92c-e373e41ebd54)
+7. 
 
 ## Konfigurasi (opsional)
 
