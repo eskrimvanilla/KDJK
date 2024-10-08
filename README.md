@@ -43,10 +43,11 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     ```
     $ gcloud auth login
     ```
-    Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, Anda bisa terhubung ke proyek Anda dengan menggunakan perintah berikut:
+    Selanjutnya akan diarahkan untuk login menggunakan akun Google Cloud. Setelah login, gunakan perintah berikut untuk terhubung ke proyek:
     ```
     $ gcloud init
     ```
+    ![image](https://github.com/user-attachments/assets/b2d70b8b-366d-4fe0-b4b4-fdf3762d8017)
 
 ## Konfigurasi (opsional)
 
