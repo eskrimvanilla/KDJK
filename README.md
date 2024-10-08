@@ -47,7 +47,7 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     ```
     $ gcloud init
     ```
-    ![image](https://github.com/user-attachments/assets/b2d70b8b-366d-4fe0-b4b4-fdf3762d8017)
+    ![image](https://github.com/user-attachments/assets/05d2af1e-0746-4aac-9ed8-ae2f976b9718)
 
 ## Konfigurasi (opsional)
 
