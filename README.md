@@ -94,7 +94,8 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     - ```kdjk``` adalah nama repository di Artifact Registry.
     - ```pure-nectar-413300``` adalah ID dari project di Google Cloud.
     - ```actual``` adalah nama image yang sedang dibuat.
-    Langkah terakhir, push image tersebut ke Artifact Registry menggunakan perintah:
+    
+    Langkah selanjutnya, push image tersebut ke Artifact Registry menggunakan perintah:
     ```
     $ docker push kdjk/pure-nectar-413300/actual
     ```
