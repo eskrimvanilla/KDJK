@@ -79,7 +79,40 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
    - Pilih Key Type sebagai JSON dan simpan file yang diunduh untuk digunakan nanti.
      
      ![image](https://github.com/user-attachments/assets/d8ddc6f6-2bf2-4fa7-a92c-e373e41ebd54)
-5. 
+5. Pindah ke CLI Linux dan atur kredensial aplikasi Google Cloud dengan perintah berikut:
+    ```
+    $ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/file.JSON"
+    ```
+    Setelah itu, buat image Docker dari file yang akan di-push. 
+
+    Langkah pertama, menandai (tag) image tersebut dengan perintah berikut:
+    ```
+    $ docker tag actualbudget/actual-server kdjk/pure-nectar-413300/actual
+    ```
+    Penjelasan:
+    - ```actualbudget/actual-server``` adalah nama folder berisi kode yang akan di-push.
+    - ```kdjk``` adalah nama repository di Artifact Registry.
+    - ```pure-nectar-413300``` adalah ID dari project di Google Cloud.
+    - ```actual``` adalah nama image yang sedang dibuat.
+    Langkah terakhir, push image tersebut ke Artifact Registry menggunakan perintah:
+    ```
+    $ docker push kdjk/pure-nectar-413300/actual
+    ```
+    Setelah proses push selesai, image akan muncul di Artifact Registry sesuai dengan detail yang telah ditentukan.
+    
+   ![image](https://github.com/user-attachments/assets/efd2c65a-7bb7-4806-ac83-ed02d26f5c09)
+   
+    Langkah terakhir, web dapat dideploy menggunakan Cloud Run dengan cara klik **Deploy Container**, pilih **Service**, lalu pilih **Container Image URL** yang sesuai.
+    
+   ![image](https://github.com/user-attachments/assets/4917e84c-261e-4cbb-8cf0-61952b195ce1)
+   
+    Nama Service akan terisi secara otomatis. Pilih region sesuai keinginan, disarankan untuk memilih yang paling dekat, yaitu ```asia-southeast2```. Biarkan opsi lainnya pada pengaturan default, lalu klik Create.
+    
+   ![image](https://github.com/user-attachments/assets/ceb0af6f-34b4-4825-859c-74ecf80eafae)
+   
+   Tunggu hingga proses deployment selesai. Setelah itu, klik nama Service yang sudah dibuat. URL aplikasi akan muncul di bagian atas.
+   
+   ![image](https://github.com/user-attachments/assets/50c70126-70bc-453b-b63a-32936f28a16c)
 
 ## Konfigurasi (opsional)
 
