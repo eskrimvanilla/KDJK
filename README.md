@@ -13,7 +13,6 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
 - Php 5.3+
 - Node.js v18 atau versi yang lebih tinggi
 - Web server (GCP)
-- Docker dan Docker compose
 
 #### Proses Instalasi :
 1. Pastikan sudah memiliki docker dan docker compose dengan menjalankan code berikut. 
