@@ -100,7 +100,7 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     $ docker push kdjk/pure-nectar-413300/actual
     ```
 
-    Bila anda tidak bisa melakukan push ke artifact registry, maka jalankan perintah berikut sebelum perintah run:
+    Bila anda tidak bisa melakukan push ke artifact registry, maka jalankan perintah berikut sebelum perintah push:
     ```
     $ gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
     ```     
