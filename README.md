@@ -31,7 +31,7 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
    
     Clone repository :
     ```
-    $ git clone https://github.com/actualbudget/actual-server.git\
+    $ git clone https://github.com/actualbudget/actual-server.git
     ```
     
     Pull dari docker image:
@@ -99,6 +99,13 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
     ```
     $ docker push kdjk/pure-nectar-413300/actual
     ```
+
+    Bila anda tidak bisa melakukan push ke artifact registry, maka jalankan perintah berikut sebelum perintah run:
+    ```
+    $ gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
+    ```     
+    Ganti asia-southeast2-docker.pkg.dev sesuai dengan region yang digunakan.
+    
     Setelah proses push selesai, image akan muncul di Artifact Registry sesuai dengan detail yang telah ditentukan.
     
    ![image](https://github.com/user-attachments/assets/efd2c65a-7bb7-4806-ac83-ed02d26f5c09)
