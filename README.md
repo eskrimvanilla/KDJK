@@ -149,10 +149,6 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 ## Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
-
 ### 1. Tampilan Utama
 Antarmuka pengguna dibagi menjadi tiga bagian:
 
@@ -163,11 +159,15 @@ Antarmuka pengguna dibagi menjadi tiga bagian:
 ![image](https://github.com/user-attachments/assets/0a58abfe-ca6d-4bd0-8a8e-be977df9c24d)
 
 #### Sisi Kanan Atas
-1. Ikon mata akan mengaburkan angka-angka di layar, berguna jika perlu melaporkan bug kepada tim Actual sambil menjaga kerahasiaan data anggaran.
-2. Ikon sinkronisasi akan menyinkronkan file lokal dengan server.
-3. "Server online" menunjukkan status koneksi. Jika tidak terhubung, teks ini akan berubah menjadi Server offline. Teks ini memungkinkan pengguna untuk mengganti kata sandi, keluar dari server, atau mengubah URL server.
+- Ikon mata akan mengaburkan angka-angka di layar, berguna jika perlu melaporkan bug kepada tim Actual sambil menjaga kerahasiaan data anggaran.
+- Ikon sinkronisasi akan menyinkronkan file lokal dengan server.
+- "Server online" menunjukkan status koneksi. Jika tidak terhubung, teks ini akan berubah menjadi Server offline. Teks ini memungkinkan pengguna untuk mengganti kata sandi, keluar dari server, atau mengubah URL server.
 
 #### Sidebar
+Dari sidebar, akses semua fitur Actual dengan mudah.
+- Fitur utama seperti Budget, Reports, dan Schedules dapat diakses langsung. 
+- Fitur yang jarang digunakan, seperti mengelola Payees dan Rules, dapat ditemukan di bawah menu More, bersama dengan pengaturan perangkat lunak.
+- Sidebar juga menampilkan semua akun, baik yang berada di dalam anggaran (on-budget) maupun di luar anggaran (off-budget), dan akun-akun ini akan muncul dalam daftar di bawah kategori yang sesuai, seperti On Budget.
 
 ### 2. Budget
 Tampilan ini memungkinkan pengguna untuk mengelola anggaran di berbagai bulan. 
@@ -178,26 +178,58 @@ Jumlah bulan yang ditampilkan di layar bisa disesuaikan dengan klik ikon kalende
 #### Month Header
 
 Di bagian atas setiap bulan, terdapat beberapa opsi dalam antarmuka pengguna:
-1. Ikon catatan memungkinkan untuk menambahkan catatan. Actual sepenuhnya mendukung Markdown, dan catatan akan dirender sesuai format Markdown saat kursor berada di atasnya.
-2. Header dapat diminimalkan dengan mengklik ikon chevron (dua panah ke atas).
-3. Ikon tiga titik vertikal memberikan akses ke fungsi-fungsi berikut untuk kategori anggaran bulan yang tercantum:
+- Ikon catatan memungkinkan untuk menambahkan catatan. Actual sepenuhnya mendukung Markdown, dan catatan akan dirender sesuai format Markdown saat kursor berada di atasnya.
+- Header dapat diminimalkan dengan mengklik ikon chevron (dua panah ke atas).
+- Ikon tiga titik vertikal memberikan akses ke fungsi-fungsi berikut untuk kategori anggaran bulan yang tercantum:
     - Salin anggaran bulan sebelumnya.
     - Atur anggaran ke nol.
     - Atur anggaran berdasarkan rata-rata 3 bulan terakhir.
 
 #### Budget Table
 ##### Sisi Kiri - Bagian Category
-1. Bagian Budget Detail menampilkan semua kategori beserta kelompoknya. Pada gambar, terlihat dua kelompok kategori pengeluaran: Usual Expenses dan Bills. Kelompok kategori dapat diminimalkan, seperti yang terlihat pada Usual Expenses.
-2. Menu dropdown memungkinkan untuk menambahkan kategori baru, mengaktifkan/menyembunyikan kelompok kategori, mengganti nama kelompok, atau menghapus kelompok kategori.
-4. Markdown juga didukung pada bagian ini saat pengguna menulis catatan
+- Bagian Budget Detail menampilkan semua kategori beserta kelompoknya. Pada gambar, terlihat dua kelompok kategori pengeluaran: Usual Expenses dan Bills. Kelompok kategori dapat diminimalkan, seperti yang terlihat pada Usual Expenses.
+- Menu dropdown memungkinkan untuk menambahkan kategori baru, mengaktifkan/menyembunyikan kelompok kategori, mengganti nama kelompok, atau menghapus kelompok kategori.
+- Markdown juga didukung pada bagian ini saat pengguna menulis catatan
 
 ##### Sisi Kanan - Bagian Budget
 Bagian ini adalah tempat utama pengguna dapat mengelola anggaran. Terdapat tiga kolom: Budgeted, Spent, dan Balance.
-1. Budgeted menunjukkan jumlah uang yang dialokasikan untuk kategori tersebut di bulan itu.
-2. Spent menampilkan total pengeluaran selama bulan tersebut.
-3. Balance adalah selisih antara kolom Budgeted dan Spent, ditambah sisa dari bulan sebelumnya (sebagai aturan umum).
+- Budgeted menunjukkan jumlah uang yang dialokasikan untuk kategori tersebut di bulan itu.
+- Spent menampilkan total pengeluaran selama bulan tersebut.
+- Balance adalah selisih antara kolom Budgeted dan Spent, ditambah sisa dari bulan sebelumnya (sebagai aturan umum).
 
 Kolom Budgeted adalah tempat mengelola anggaran. Angka dapat dimasukkan secara manual, atau menggunakan dropdown untuk mengisi anggaran berdasarkan salinan dari anggaran bulan sebelumnya, rata-rata 3 atau 6 bulan terakhir, hingga rata-rata tahunan.
+
+### 3. Akun Terdaftar
+Tampilan ini memungkinkan untuk mengelola transaksi di suatu akun
+
+![image](https://github.com/user-attachments/assets/294aea74-d8e3-4768-a87c-fff966b18e29)
+
+##### Header Akun
+- Di bawah nama akun, saldo saat ini ditampilkan. Hijau menunjukkan saldo positif, sedangkan merah menunjukkan saldo negatif. Bagian atas juga menyediakan akses ke beberapa fungsi seperti mengimpor transaksi, menambahkan transaksi secara manual, dan memfilter transaksi yang ditampilkan. Di sebelah kanan terdapat kolom pencarian untuk dengan cepat mencari semua bidang.
+- Transaksi dapat dipecah menjadi lebih dari satu kategori. Klik panah expand/contract untuk menampilkan atau menyembunyikan transaksi yang terpecah.
+- Tiga titik horizontal memungkinkan berbagai manipulasi akun, seperti rekonsiliasi, mengekspor akun, menutup, dan menautkan akun untuk transaksi bank otomatis. Di sini juga terdapat opsi untuk menampilkan saldo berjalan akun. 
+- Import memungkinkan untuk mengimpor transaksi dari file CSV, QIF, OFX, dan QFX.
+- Untuk menambahkan transaksi secara manual, klik Add New. 
+
+##### Filter Transaksi
+![image](https://github.com/user-attachments/assets/aa82abc5-d8ca-42e1-bda4-1209ee54d04f)
+
+Filter memungkinkan memfilter berdasarkan semua bidang. Pada gambar, dapat dilihat  pencarian di mana Category adalah Food. Jika sering menggunakan filter yang sama, filter dapat disimpan dengan mengklik dropdown Unsaved filter di sisi kanan header.
+
+Saat memilih transaksi di sebelah kanan saldo akun, saldo dari transaksi yang dipilih akan muncul di sebelah kanan saldo akun tersebut. Jumlah transaksi yang dipilih ditampilkan dalam kotak merah. Mengklik dropdown ini memungkinkan menjalankan berbagai perintah pada transaksi yang dipilih.
+
+### 4. Laporan
+Tampilan ini memberikan akses ke dua laporan bawaan, yaitu Net Worth dan Cash Flow, serta laporan khusus yang dibuat sendiri.Semua laporan ditampilkan dalam versi kecil. 
+
+![image](https://github.com/user-attachments/assets/d5df80ae-346b-4d2e-9724-0d58b4b0f07c)
+
+Net worth mencerminkan keseimbangan keseluruhan semua akun dari waktu ke waktu. Nilainya dihitung dengan mengurangi total utang dari nilai keseluruhan uang tunai dan aset, termasuk semua investasi. Pada dasarnya, net worth adalah jumlah yang akan dimiliki jika semua aset dijual dan semua utang dilunasi.
+
+Cash flow melacak pengeluaran dari waktu ke waktu dengan fokus pada akun-akun yang dianggarkan dan menampilkan saldo mereka. Laporan ini menyajikan visualisasi terpisah untuk pendapatan dan pengeluaran, memberikan gambaran cepat tentang bagaimana kedua faktor ini memengaruhi uang yang tersedia. Dengan menganggap akun yang dianggarkan sebagai "uang tunai yang tersedia", cash flow secara jelas menunjukkan fluktuasi dana yang tersedia.
+
+![image](https://github.com/user-attachments/assets/784d9b3b-325f-4e49-9344-e11bfbb56c3f)
+
+Laporan khusus di Actual dirancang untuk memberikan semua informasi yang dibutuhkan terkait kebiasaan pengeluaran dan pendapatan. Pada gambar, laporan mencakup Usual Expenses selama enam bulan terakhir. Satu laporan disajikan dalam bentuk grafik atau tabel. 
 
 ## Pembahasan
 
