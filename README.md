@@ -134,7 +134,7 @@ Antarmuka pengguna dibagi menjadi tiga bagian:
 
 ![image](https://github.com/user-attachments/assets/0a58abfe-ca6d-4bd0-8a8e-be977df9c24d)
 
-#### Sisi Kanan Atas
+##### Sisi Kanan Atas
 - Ikon mata akan mengaburkan angka-angka di layar, berguna jika perlu melaporkan bug kepada tim Actual sambil menjaga kerahasiaan data anggaran.
 - Ikon sinkronisasi akan menyinkronkan file lokal dengan server.
 - "Server online" menunjukkan status koneksi. Jika tidak terhubung, teks ini akan berubah menjadi Server offline. Teks ini memungkinkan pengguna untuk mengganti kata sandi, keluar dari server, atau mengubah URL server.
