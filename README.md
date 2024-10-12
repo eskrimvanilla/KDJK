@@ -153,6 +153,29 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
+### 1. The Budget
+Tampilan ini memungkinkan untuk mengelola anggaran untuk berbagai bulan. Informasi lebih lanjut tentang cara melakukan penganggaran dengan Actual dapat ditemukan di bagian Budgeting dalam panduan ini.
+
+![image](https://github.com/user-attachments/assets/17ac3863-0dcd-4e84-8a27-ab17d48e7307)
+Jumlah bulan yang ditampilkan di layar bisa disesuaikan dengan klik ikon kalender di sudut kanan atas, pilih jumlah bulan yang ingin ditampilkan, lalu tentukan bulan mana saja yang akan ditampilkan sesuai kebutuhan.
+
+#### Month Header
+
+Di bagian atas setiap bulan, terdapat beberapa opsi dalam antarmuka pengguna:
+1. Klik ikon catatan memungkinkan untuk menambahkan catatan. Actual sepenuhnya mendukung Markdown, dan catatan akan dirender sesuai format Markdown saat kursor melayang di atasnya.
+2. Header dapat diminimalkan dengan mengklik ikon chevron (dua panah ke atas).
+3. Klik ikon tiga titik vertikal memberikan akses ke fungsi-fungsi berikut untuk kategori anggaran bulan tersebut:
+    - Salin anggaran bulan sebelumnya.
+    - Atur anggaran ke nol.
+    - Atur anggaran berdasarkan rata-rata 3 bulan terakhir.
+
+#### Budget Table
+a. Left side - category section
+
+1. Bagian Budget Detail menampilkan semua kategori beserta     kelompoknya. Pada gambar di bawah, terlihat dua kelompok kategori pengeluaran: Usual Expenses dan Bills. Kelompok kategori dapat diminimalkan, seperti yang terlihat pada Usual Expenses.
+2. Mengklik tiga titik vertikal (di dalam kotak kuning) memungkinkan untuk mengaktifkan atau menyembunyikan kategori tersembunyi serta memperluas atau menyembunyikan semua kelompok kategori.
+3. Ketika kursor melayang di atas kelompok kategori (dalam kotak hijau), ikon catatan akan muncul, dan catatan dapat ditambahkan dengan mengkliknya. Seperti pada bagian atas, dukungan Markdown juga tersedia di sini. Menu dropdown memungkinkan untuk menambahkan kategori baru, mengaktifkan/menyembunyikan kelompok kategori, mengganti nama kelompok, atau menghapus kelompok kategori.
+4. Sekarang, lihat sebuah kategori (misalnya Internet). Fungsionalitasnya sama seperti di tingkat kelompok: kategori dapat disembunyikan, diganti namanya, dihapus, dan catatan juga dapat ditambahkan di sini.
 
 ## Pembahasan
 
