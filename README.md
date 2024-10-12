@@ -124,6 +124,7 @@ Actual adalah alat keuangan pribadi lokal yang berbasis pada penganggaran zero-s
 ## Cara Pemakaian
 
 ### Penjelasan Fitur Secara General
+
 #### 1. Tampilan Utama
 Antarmuka pengguna dibagi menjadi tiga bagian:
 
@@ -138,7 +139,7 @@ Antarmuka pengguna dibagi menjadi tiga bagian:
 - Ikon sinkronisasi akan menyinkronkan file lokal dengan server.
 - "Server online" menunjukkan status koneksi. Jika tidak terhubung, teks ini akan berubah menjadi Server offline. Teks ini memungkinkan pengguna untuk mengganti kata sandi, keluar dari server, atau mengubah URL server.
 
-#### Sidebar
+##### Sidebar
 Dari sidebar, akses semua fitur Actual dengan mudah.
 - Fitur utama seperti Budget, Reports, dan Schedules dapat diakses langsung. 
 - Fitur yang jarang digunakan, seperti mengelola Payees dan Rules, dapat ditemukan di bawah menu More, bersama dengan pengaturan perangkat lunak.
