@@ -3,7 +3,7 @@
 
 ## Sekilas Tentang Actual
 
-Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggaran zero-sum. Alat ini mendukung sinkronisasi lintas perangkat, aturan khusus, impor transaksi manual (dari berkas QIF, OFX, dan QFX), dan sinkronisasi otomatis opsional dengan banyak bank.
+Actual adalah alat keuangan pribadi lokal yang berbasis pada penganggaran zero-sum. Alat ini mendukung sinkronisasi lintas perangkat, aturan khusus, impor transaksi manual (dari berkas QIF, OFX, dan QFX), dan sinkronisasi otomatis opsional dengan banyak bank.
 
 
 ## Instalasi
@@ -121,35 +121,10 @@ Actual adalah alat keuangan pribadi berbasis lokal yang berbasis pada penganggar
    
    ![image](https://github.com/user-attachments/assets/50c70126-70bc-453b-b63a-32936f28a16c)
 
-## Konfigurasi (opsional)
-
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-- batas upload file
-- batas memori
-- dll
-
-Plugin untuk fungsi tambahan
-- login dengan Google/Facebook
-- editor Markdown
-- dll
-
-
-##  Maintenance (opsional)
-
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- buat backup database tiap pekan
-- hapus direktori sampah tiap hari
-- dll
-
-
-## Otomatisasi (opsional)
-
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-
-
 ## Cara Pemakaian
 
-### 1. Tampilan Utama
+### Penjelasan Fitur Secara General
+#### 1. Tampilan Utama
 Antarmuka pengguna dibagi menjadi tiga bagian:
 
 1. Sidebar di sebelah kiri, yang memudahkan pengguna untuk beralih antara berbagai tampilan seperti Budget, Reports, dan Schedules.
