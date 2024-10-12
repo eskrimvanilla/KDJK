@@ -26,7 +26,7 @@ Actual adalah alat keuangan pribadi lokal yang berbasis pada penganggaran zero-s
     $ sudo apt  install docker-compose
     ```
     
-2. Instalasi Actual. Terdapat dua cara untuk melakukan instalasi, yaitu menggunakan clone repository atau docker image
+2. Instalasi Actual. Terdapat dua cara untuk melakukan instalasi, yaitu menggunakan clone repository atau docker image.
    
     Clone repository :
     ```
@@ -48,10 +48,14 @@ Actual adalah alat keuangan pribadi lokal yang berbasis pada penganggaran zero-s
     $ gcloud init
     ```
     Untuk langkah konfigurasi, pilih opsi sesuai dengan yang diinginkan.
-   - Pilih konfigurasi yang ada atau buat konfigurasi baru
-     Foto1
-   - Pilih akun Google yang akan digunakan dan pilih proyek dari daftar proyek yang tersedia
-     Foto2
+   - Pilih konfigurasi yang ada atau buat konfigurasi baru.
+
+     ![image](https://github.com/user-attachments/assets/464ef244-80fe-4b3d-8d62-27726813565d)
+
+   - Pilih akun Google yang akan digunakan dan pilih proyek dari daftar proyek yang tersedia.
+     
+     ![image](https://github.com/user-attachments/assets/0b657104-19a7-4393-bf06-378077b42890)
+
 4. Setelah menghubungkan Linux CLI dengan GCP, langkah berikutnya adalah membuat repository baru untuk Artifact Registry di GCP.
 
    Klik tombol + Create Repository yang terdapat di halaman Artifact Registry pada dashboard Google Cloud.
@@ -134,18 +138,18 @@ Antarmuka pengguna dibagi menjadi tiga bagian:
 
 ![image](https://github.com/user-attachments/assets/0a58abfe-ca6d-4bd0-8a8e-be977df9c24d)
 
-##### Sisi Kanan Atas
+#### Sisi Kanan Atas
 - Ikon mata akan mengaburkan angka-angka di layar, berguna jika perlu melaporkan bug kepada tim Actual sambil menjaga kerahasiaan data anggaran.
 - Ikon sinkronisasi akan menyinkronkan file lokal dengan server.
 - "Server online" menunjukkan status koneksi. Jika tidak terhubung, teks ini akan berubah menjadi Server offline. Teks ini memungkinkan pengguna untuk mengganti kata sandi, keluar dari server, atau mengubah URL server.
 
-##### Sidebar
+#### Sidebar
 Dari sidebar, akses semua fitur Actual dengan mudah.
 - Fitur utama seperti Budget, Reports, dan Schedules dapat diakses langsung. 
 - Fitur yang jarang digunakan, seperti mengelola Payees dan Rules, dapat ditemukan di bawah menu More, bersama dengan pengaturan perangkat lunak.
 - Sidebar juga menampilkan semua akun, baik yang berada di dalam anggaran (on-budget) maupun di luar anggaran (off-budget), dan akun-akun ini akan muncul dalam daftar di bawah kategori yang sesuai, seperti On Budget.
 
-### 2. Budget
+#### 2. Budget
 Tampilan ini memungkinkan pengguna untuk mengelola anggaran di berbagai bulan. 
 
 ![image](https://github.com/user-attachments/assets/31e4aeb2-a154-4eef-b8ba-5816276967bd)
@@ -175,8 +179,8 @@ Bagian ini adalah tempat utama pengguna dapat mengelola anggaran. Terdapat tiga 
 
 Kolom Budgeted adalah tempat mengelola anggaran. Angka dapat dimasukkan secara manual, atau menggunakan dropdown untuk mengisi anggaran berdasarkan salinan dari anggaran bulan sebelumnya, rata-rata 3 atau 6 bulan terakhir, hingga rata-rata tahunan.
 
-### 3. Akun Terdaftar
-Tampilan ini memungkinkan untuk mengelola transaksi di suatu akun
+#### 3. Akun Terdaftar
+Tampilan ini memungkinkan untuk mengelola transaksi di suatu akun.
 
 ![image](https://github.com/user-attachments/assets/294aea74-d8e3-4768-a87c-fff966b18e29)
 
@@ -194,7 +198,7 @@ Filter memungkinkan memfilter berdasarkan semua bidang. Pada gambar, dapat dilih
 
 Saat memilih transaksi di sebelah kanan saldo akun, saldo dari transaksi yang dipilih akan muncul di sebelah kanan saldo akun tersebut. Jumlah transaksi yang dipilih ditampilkan dalam kotak merah. Mengklik dropdown ini memungkinkan menjalankan berbagai perintah pada transaksi yang dipilih.
 
-### 4. Laporan
+#### 4. Laporan
 Tampilan ini memberikan akses ke dua laporan bawaan, yaitu Net Worth dan Cash Flow, serta laporan khusus yang dibuat sendiri.Semua laporan ditampilkan dalam versi kecil. 
 
 ![image](https://github.com/user-attachments/assets/d5df80ae-346b-4d2e-9724-0d58b4b0f07c)
@@ -206,6 +210,89 @@ Cash flow melacak pengeluaran dari waktu ke waktu dengan fokus pada akun-akun ya
 ![image](https://github.com/user-attachments/assets/784d9b3b-325f-4e49-9344-e11bfbb56c3f)
 
 Laporan khusus di Actual dirancang untuk memberikan semua informasi yang dibutuhkan terkait kebiasaan pengeluaran dan pendapatan. Pada gambar, laporan mencakup Usual Expenses selama enam bulan terakhir. Satu laporan disajikan dalam bentuk grafik atau tabel. 
+
+#### 5. Transaksi Terjadwal (Scheduled Transactions)
+Fitur lainnya adalah transaksi terjadwal dimana pengguna bisa menambahkan jadwal yang diusulkan berdasarkan data yang tersedia. 
+
+Penjadwalan bisa dilakukan berdasarkan berbagai faktor berikut:
+1. Diatur sebagai penjadwalan berulang atau hanya sekali
+2. Dapat dimasukkan secara ototmatis ke dalam akun yang terdaftar atau pilih secara manual
+3. Pilihan untuk dimasukkan beberapa hari tertentu dalam sebulan
+4. Pilihan untuk menentukan frekuensi pembayaran, seperti tiap bulan atau lainnya
+
+   ![image](https://github.com/user-attachments/assets/f8bd9804-39de-4474-b4b7-d764826a4815)
+
+#### 6. Manajemen Penerima Pembayaran (Payees Management)
+Tampilan ini memungkinkan untuk mengelola penerima pembayaran dimana fitur ini dapat memperlihatkan penerima pembayaran mana yang ada di sistem.
+
+![image](https://github.com/user-attachments/assets/956376e9-722b-4863-9c5d-567ae220bf6c)
+
+Fitur ini juga dapat menghapus dan menggabungkan penerima pembayaran sesuai keinginan. 
+
+### Tahapan Penggunaan untuk Pemula
+
+#### 1. Membuat Akun
+Untuk pertama kali membuka web pengguna akan ditunjukkan untuk membuat akun.
+
+![image](https://github.com/user-attachments/assets/d613792f-d388-4458-ae01-e269224c8d26)
+
+Pilih untuk membuat local akun.
+
+![image](https://github.com/user-attachments/assets/cf150591-8aa0-4936-927a-cd8ebf8894c8)
+
+Masukkan name dan balance sesuai yang diinginkan.
+
+![image](https://github.com/user-attachments/assets/e56d8a4a-778c-41a0-adb7-e1aa07dd14cc)
+
+Tekan create dan akun berhasil dibuat.
+
+![image](https://github.com/user-attachments/assets/d353d10f-fb00-4203-aa17-5708b77c4f55)
+
+#### 2. Menghapus dan Mengganti Nama Akun
+Pengguna dapat menghapus atau mengganti nama akun sebagai berikut.
+
+![image](https://github.com/user-attachments/assets/64621a36-b05d-4e65-824f-c04b3d93b3b6)
+
+#### 3. Pengaturan Tampilan
+Pada halaman settings, pengguna dapat mengubah beberapa hal terkait tampilan, seperti format waktu, tema halaman, format nomor, dan lainnya.
+
+![image](https://github.com/user-attachments/assets/8b3d70b3-4c5a-4cc8-a580-30d289188c09)
+
+#### 4. Mulai membaut budget
+Pengguna dapat membuat manajemen budget perbulan secara manual dengan menekan icon Add New atau dengan menggunakan fitur import excel.
+
+![image](https://github.com/user-attachments/assets/fa1bef9b-49fa-4487-a8cd-4937955f7362)
+
+Setelah membuat budget perbulan, pengguna dapat melihat tampilan rincian pada halaman Budget. Pada halaman tersebut pengguna dapat melihat rincian pengeluaran seperti Food, availaible funds bulan ini, jumlah kelebihan pengeluaran, dan sisa budget untuk bulan depan.
+
+![image](https://github.com/user-attachments/assets/ec666553-8bc0-49bd-b547-1fc1547ebbe2)
+
+#### 5. Membuat Kategori (Category)
+Pengguna juga dapat membuat category baru sesuai keinginan dengan menekan titik 3 atau arrow yang berada disamping kolom category.
+
+![image](https://github.com/user-attachments/assets/b3465794-1bd5-461c-9bc9-b74d3e30ce3a)
+
+#### 6. Halaman Report
+Halaman untuk melihat visualisasi data budget pengguna dari bulan ke bulan.
+
+![image](https://github.com/user-attachments/assets/aca24599-e688-4e05-8be1-c85337e8d762)
+
+#### 7. Halaman Schedules
+Halaman untuk membuat kegiatan transaksi yang sering dilakukan tiap bulan. Sebagai contoh transaksi untuk pembayaran kesehatan setipa tanggal 15.
+
+![image](https://github.com/user-attachments/assets/77b3272c-8bfe-4f88-b382-2282da4a2ef1)
+
+#### 8. Halaman Payees
+Halaman untuk membuat manajemen pembayaran. 
+
+![image](https://github.com/user-attachments/assets/110fe4b4-9534-4bdd-a5aa-fe058e75258c)
+
+#### 8. Halaman Rules
+Halaman untuk membuat peraturan baru untuk manajemen pembayaran atau pemasukan.
+
+![image](https://github.com/user-attachments/assets/6242969a-01a2-40d5-a9dc-b5866032f8bb)
+
+![image](https://github.com/user-attachments/assets/69b71138-fb43-4b1e-89ce-c1edad265e65)
 
 ## Pembahasan
 
