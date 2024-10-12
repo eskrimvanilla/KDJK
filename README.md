@@ -296,30 +296,31 @@ Halaman untuk membuat peraturan baru untuk manajemen pembayaran atau pemasukan.
 
 ## Pembahasan
 
-###Tentang Aplikasi Actual
+### Tentang Aplikasi Actual
 
-####Kelebihan
+#### Kelebihan
 - Aplikasi ini memiliki berbagai fitur untuk mendukung pengguna dapat lebih fleksibel dalam manajemen budget.
 - Memiliki desain yang responsive dan dapat digunakan dengan device apapun (Mobile atau PC).
 - Terdapat fitur import excel untuk memudahkan pengguna
 - Keamanan dan privasi data pengguna lebih terjamin karena data disimpan secara lokal, bukan di cloud. Sehingga pengguna tidak perlu khawatir data pribadi akan diakses oleh pihak ketiga.
 - Meskipun berbasis lokal, Actual mendukung sinkronisasi multi-perangkat, sehingga pengguna tetap dapat mengakses dan mengelola keuangan di berbagai perangkat tanpa harus bergantung pada cloud.
-####Kekurangan
+  
+#### Kekurangan
 - Dibandingkan dengan aplikasi keuangan lain yang lebih komersial, Actual mungkin kurang dalam fitur lanjutan seperti pelacakan investasi atau laporan analitis yang lebih kompleks.
 - Meskipun sinkronisasi otomatis dengan bank tersedia, ini adalah fitur opsional yang mungkin tidak mendukung semua bank atau mungkin memerlukan biaya tambahan. Pengguna dengan bank yang tidak didukung harus melakukan impor transaksi secara manual.
   
-###Perbandingan dengan aplikasi web lain yang sejenis
+### Perbandingan dengan aplikasi web lain yang sejenis
 
-####Actual vs YNAB(You Need A Budget):
+#### Actual vs YNAB(You Need A Budget):
 - Keduanya menggunakan zero-sum budgeting, namun YNAB menyediakan lebih banyak panduan bagi pengguna baru.
 - Actual menggunakan pendekatan local-first, sedangkan YNAB menggunakan cloud.
 - Actual gratis dan open-source, YNAB berbayar dengan langganan bulanan.
 - YNAB mendukung lebih banyak bank secara otomatis dibandingkan Actual.
-####Actual vs Mint:
+#### Actual vs Mint:
 - Mint berfokus pada pelacakan pengeluaran, sementara Actual pada pengelolaan anggaran ketat.
 - Mint mendukung sinkronisasi otomatis dengan banyak bank, Actual terbatas.
 - Mint memiliki fitur pelacakan investasi dan peringatan anggaran, sedangkan Actual lebih minimalis.
-####Actual vs Personal Capital:
+#### Actual vs Personal Capital:
 - Personal Capital lebih berfokus pada pelacakan kekayaan dan investasi, sedangkan Actual untuk pengelolaan anggaran harian.
 - Personal Capital unggul dengan alat investasi, Actual tidak menyediakan alat investasi.
 - Actual lebih aman dengan data lokal, Personal Capital menggunakan cloud yang lebih rentan.
