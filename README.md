@@ -153,29 +153,51 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
-### 1. The Budget
-Tampilan ini memungkinkan untuk mengelola anggaran untuk berbagai bulan. Informasi lebih lanjut tentang cara melakukan penganggaran dengan Actual dapat ditemukan di bagian Budgeting dalam panduan ini.
+### 1. Tampilan Utama
+Antarmuka pengguna dibagi menjadi tiga bagian:
 
-![image](https://github.com/user-attachments/assets/17ac3863-0dcd-4e84-8a27-ab17d48e7307)
-Jumlah bulan yang ditampilkan di layar bisa disesuaikan dengan klik ikon kalender di sudut kanan atas, pilih jumlah bulan yang ingin ditampilkan, lalu tentukan bulan mana saja yang akan ditampilkan sesuai kebutuhan.
+1. Sidebar di sebelah kiri, yang memudahkan pengguna untuk beralih antara berbagai tampilan seperti Budget, Reports, dan Schedules.
+2. Status server dan sinkronisasi (jika digunakan) ditampilkan di sudut kanan atas.
+3. Konten utama antarmuka tergantung pada fitur yang dipilih di sidebar. Gambar ini menunjukkan contoh tampilan Budget.
+
+![image](https://github.com/user-attachments/assets/0a58abfe-ca6d-4bd0-8a8e-be977df9c24d)
+
+#### Sisi Kanan Atas
+1. Ikon mata akan mengaburkan angka-angka di layar, berguna jika perlu melaporkan bug kepada tim Actual sambil menjaga kerahasiaan data anggaran.
+2. Ikon sinkronisasi akan menyinkronkan file lokal dengan server.
+3. "Server online" menunjukkan status koneksi. Jika tidak terhubung, teks ini akan berubah menjadi Server offline. Teks ini memungkinkan pengguna untuk mengganti kata sandi, keluar dari server, atau mengubah URL server.
+
+#### Sidebar
+
+### 2. Budget
+Tampilan ini memungkinkan pengguna untuk mengelola anggaran di berbagai bulan. 
+
+![image](https://github.com/user-attachments/assets/31e4aeb2-a154-4eef-b8ba-5816276967bd)
+Jumlah bulan yang ditampilkan di layar bisa disesuaikan dengan klik ikon kalender di sudut kiri atas, pilih jumlah bulan yang ingin ditampilkan, lalu tentukan bulan mana saja yang akan ditampilkan sesuai kebutuhan.
 
 #### Month Header
 
 Di bagian atas setiap bulan, terdapat beberapa opsi dalam antarmuka pengguna:
-1. Klik ikon catatan memungkinkan untuk menambahkan catatan. Actual sepenuhnya mendukung Markdown, dan catatan akan dirender sesuai format Markdown saat kursor melayang di atasnya.
+1. Ikon catatan memungkinkan untuk menambahkan catatan. Actual sepenuhnya mendukung Markdown, dan catatan akan dirender sesuai format Markdown saat kursor berada di atasnya.
 2. Header dapat diminimalkan dengan mengklik ikon chevron (dua panah ke atas).
-3. Klik ikon tiga titik vertikal memberikan akses ke fungsi-fungsi berikut untuk kategori anggaran bulan tersebut:
+3. Ikon tiga titik vertikal memberikan akses ke fungsi-fungsi berikut untuk kategori anggaran bulan yang tercantum:
     - Salin anggaran bulan sebelumnya.
     - Atur anggaran ke nol.
     - Atur anggaran berdasarkan rata-rata 3 bulan terakhir.
 
 #### Budget Table
-a. Left side - category section
+##### Sisi Kiri - Bagian Category
+1. Bagian Budget Detail menampilkan semua kategori beserta kelompoknya. Pada gambar, terlihat dua kelompok kategori pengeluaran: Usual Expenses dan Bills. Kelompok kategori dapat diminimalkan, seperti yang terlihat pada Usual Expenses.
+2. Menu dropdown memungkinkan untuk menambahkan kategori baru, mengaktifkan/menyembunyikan kelompok kategori, mengganti nama kelompok, atau menghapus kelompok kategori.
+4. Markdown juga didukung pada bagian ini saat pengguna menulis catatan
 
-1. Bagian Budget Detail menampilkan semua kategori beserta     kelompoknya. Pada gambar di bawah, terlihat dua kelompok kategori pengeluaran: Usual Expenses dan Bills. Kelompok kategori dapat diminimalkan, seperti yang terlihat pada Usual Expenses.
-2. Mengklik tiga titik vertikal (di dalam kotak kuning) memungkinkan untuk mengaktifkan atau menyembunyikan kategori tersembunyi serta memperluas atau menyembunyikan semua kelompok kategori.
-3. Ketika kursor melayang di atas kelompok kategori (dalam kotak hijau), ikon catatan akan muncul, dan catatan dapat ditambahkan dengan mengkliknya. Seperti pada bagian atas, dukungan Markdown juga tersedia di sini. Menu dropdown memungkinkan untuk menambahkan kategori baru, mengaktifkan/menyembunyikan kelompok kategori, mengganti nama kelompok, atau menghapus kelompok kategori.
-4. Sekarang, lihat sebuah kategori (misalnya Internet). Fungsionalitasnya sama seperti di tingkat kelompok: kategori dapat disembunyikan, diganti namanya, dihapus, dan catatan juga dapat ditambahkan di sini.
+##### Sisi Kanan - Bagian Budget
+Bagian ini adalah tempat utama pengguna dapat mengelola anggaran. Terdapat tiga kolom: Budgeted, Spent, dan Balance.
+1. Budgeted menunjukkan jumlah uang yang dialokasikan untuk kategori tersebut di bulan itu.
+2. Spent menampilkan total pengeluaran selama bulan tersebut.
+3. Balance adalah selisih antara kolom Budgeted dan Spent, ditambah sisa dari bulan sebelumnya (sebagai aturan umum).
+
+Kolom Budgeted adalah tempat mengelola anggaran. Angka dapat dimasukkan secara manual, atau menggunakan dropdown untuk mengisi anggaran berdasarkan salinan dari anggaran bulan sebelumnya, rata-rata 3 atau 6 bulan terakhir, hingga rata-rata tahunan.
 
 ## Pembahasan
 
